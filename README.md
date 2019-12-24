@@ -8,3 +8,6 @@ This project was inspired by mega ia x and mari/o.
 Hopefully you might find that useful.
 You can find some videos of it running here: 
 https://www.youtube.com/watch?v=P1kLbxp8Mhk&list=PLkBF5AWJutYeHXpW44k4mvUM004CPXrGq
+
+![image](https://user-images.githubusercontent.com/56324869/71424612-ea29f680-2671-11ea-8173-9f5fcc724f1b.png)
+
