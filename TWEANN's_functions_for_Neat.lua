@@ -47,7 +47,7 @@ function copy_genome(genome)
   copied_genome.num_neurons = genome.num_neurons
   copied_genome.fitness = genome.fitness
   copied_genome.shared_fitness = genome.shared_fitness
-  return g2
+  return copied_genome
 end
 
 function copy_gene(gene)
