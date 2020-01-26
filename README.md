@@ -20,7 +20,10 @@ As you'll see in the docs, there's some problems with the mapping system
 for example this one in Choco mountain, that will map to the neural network input even the track section above the kart, or the track below when the kart reach the high section, it's explained in the docs how to solve it.
 
 todo: some tracks aren't playable because of some sections that uses a type of texture that the load track doesn't work, the texture map can be found at the end of the tweanns functions.lua functions file. Maybe some time I'll take a look on it, I think its because of the type of mainmemoryread function being used at the moment, but couldn't be as well:
+
 ![image](https://user-images.githubusercontent.com/56324869/71424888-87d2f500-2675-11ea-9ef3-5d1b638b18aa.png)
+
+FIXED: It can be mapped with 0x0A value on stage.ground_type, so this track is playable (it will map all the dark brown sand) :)
 
 The whole project was only possible by RenaKunisaki and Shygoo reverse engineering Mario Kart 64, RenaKunisaki repository is at my favorites and you should definitely take a look if you want to work with mario kart 64 or even to understand  F3DEX, The RSP microcode program used by this game to render graphics.
 
