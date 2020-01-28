@@ -23,24 +23,21 @@ function round(num)
 end
 
 --adapted functions from Nick Nelson
-function load_track() -- that will load the track, then you can manipulate it, compare values etc
+function load_track() -- carrega a pista
         the_stage = {}
-        for ground = stage.init,stage.init + 81920, 22 do
-        -- I tried different values for the end of this for loop, and I find out that it dont load the tracks entirely with 70000(like rainbow road and koopa troopa beach). 
-        -- So Im using 81920, works fine
-        -- here it is fragmented in three parts, so it reads the x y z axis with an offset compared to the last part, 
-        -- for example: p2_addr go to a max of 0x15+0x4(0x19 in div.p2.z), so the p3_addr will start at 0x19.
-        -- also this functions only read one kind of texture, which is the state.ground_type, but you can change the ground_type value and call it again
-        -- that's what I do for Frappe snowland bridge and Sherbet Land cave.
-        
+        for ground = stage.init,stage.init + 81920, 44 do
+        -- I tried different values for the end of this for loop, and I find out that it dont load the tracks entirely with 70000(like rainbow road and koopa troopa beach). So Im using 81920, works fine
+         -- here it is fragmented in three parts, so it reads the x y z axis with an offset compared to the last part, for example sec2 go to 0x15+0x4(0x19) in Z axis, so the sec3 will start at 0x19
+         --why this function exists? A:That's because I didnt find the address that shows us where the colisions ends
         local div = {}
         div.p1 = {}
         div.p2 = {}
         div.p3 = {}
       
         local the_attribute = mainmemory.read_s16_be(ground + 0x2)--0x2
-        if the_attribute == stage.ground_type then
-        div.attribute = the_attribute
+
+        if (the_attribute == stage.ground_type) then
+        div.attribute = the_attribute 
 
       
         local p1_addr = mainmemory.read_s24_be(ground + 0x11)
@@ -56,12 +53,33 @@ function load_track() -- that will load the track, then you can manipulate it, c
           div.p3.x = mainmemory.read_s16_be(p3_addr)
           div.p3.y = mainmemory.read_s16_be(p3_addr + 0x2)
           div.p3.z = mainmemory.read_s16_be(p3_addr + 0x4)
-        
-      the_stage[#the_stage + 1] = div
-      end 
-      end 
-end
 
+      the_stage[#the_stage + 1] = div
+        end 
+        --can map other textures at the same time, even though the div is the same, it allows
+        --get tile attribute to map it
+        if (the_attribute == stage.second_ground_type) then
+          div.attribute = stage.second_ground_type
+  
+        
+          local p1_addr = mainmemory.read_s24_be(ground + 0x11)
+          local p2_addr = mainmemory.read_s24_be(ground + 0x15)
+          local p3_addr = mainmemory.read_s24_be(ground + 0x19)
+  
+            div.p1.x = mainmemory.read_s16_be(p1_addr)
+            div.p1.y = mainmemory.read_s16_be(p1_addr + 0x2)
+            div.p1.z = mainmemory.read_s16_be(p1_addr + 0x4)
+            div.p2.x = mainmemory.read_s16_be(p2_addr)
+            div.p2.y = mainmemory.read_s16_be(p2_addr + 0x2)
+            div.p2.z = mainmemory.read_s16_be(p2_addr + 0x4)
+            div.p3.x = mainmemory.read_s16_be(p3_addr)
+            div.p3.y = mainmemory.read_s16_be(p3_addr + 0x2)
+            div.p3.z = mainmemory.read_s16_be(p3_addr + 0x4)
+  
+        the_stage[#the_stage + 1] = div
+          end 
+        end 
+end
 function get_tiles()
   tiles = {}
 -- x and z are the axis to be mapped
