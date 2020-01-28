@@ -27,4 +27,9 @@ FIXED: It can be mapped with 0x0A value on stage.ground_type, so this track is p
 
 The whole project was only possible by RenaKunisaki and Shygoo reverse engineering Mario Kart 64, RenaKunisaki repository is at my favorites and you should definitely take a look if you want to work with mario kart 64 or even to understand  F3DEX, The RSP microcode program used by this game to render graphics.
 
+The latest version can be found here:
+<https://www.youtube.com/watch?v=Howctxzh-uo>
+Where you can see the snow and the bridge being mapped at the same time. It works on Koopa Troopa Beach as well or any
+other texture (Actually the boosters in Dk jungle parkway and Royal Raceway are the only texture I tested and it didnt work).
+
 
