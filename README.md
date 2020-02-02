@@ -32,4 +32,6 @@ The latest version can be found here:
 Where you can see the snow and the bridge being mapped at the same time. It works on Koopa Troopa Beach as well or any
 other texture (Actually the boosters in Dk jungle parkway and Royal Raceway are the only texture I tested and it didnt work).
 
+What am I doing? Currently I'am training a new model to drive while mapping tracks like bowser castle and possible objects in the future (like cars and trucks in toad's turnpike)
+
 
