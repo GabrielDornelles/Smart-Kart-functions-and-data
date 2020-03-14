@@ -34,8 +34,6 @@ other texture (Actually the boosters in Dk jungle parkway and Royal Raceway are 
 
 What am I doing? Currently I'am training a new model to drive while mapping tracks like bowser castle and possible objects in the future (like cars and trucks in toad's turnpike).
 
-**At the end of our journey, all we find was a hollow, meaningless future. Kainé-san, you've been gone for a really long time...**
-If our lives are merely the dreams we are telling ourselves,I wish that this story I'm telling myself was a dream instead of a bad nightmare I can't wake from.
 
 
 
