@@ -32,8 +32,16 @@ The latest version can be found here:
 Where you can see the snow and the bridge being mapped at the same time. It works on Koopa Troopa Beach as well or any
 other texture (Actually the boosters in Dk jungle parkway and Royal Raceway are the only texture I tested and it didnt work).
 
-What am I doing? Currently I'am training a new model to drive while mapping tracks like bowser castle and possible objects in the future (like cars and trucks in toad's turnpike).
+## Fun Fact: 
+I discovered through one neural net that you can use kind of a "cheat" to loss less speed at turns, it turns out that the game calculates the speed slowdown during curves using its current angle (sine and cossine in ram), so it slows exponentially based on kart angle (that should be at very least a bit close to 0 or 180º). If you do your turns really fast and press the oposite direction, vectors cancelate each other and speed is never decreased, and since vectors cancelate, that kart its just at a straigth 90º, do it on every turn and the normal way of playing will never be able to reach you. I send the neural net ghost to the speedrunner that holds Mario Kart 64 world record and he said 
 
+"The key is straightening out though. You go slower when the kart is turned, so you want to do little adjustments and turn back the opposite direction to straighten out the kart as much as possible.".
+
+Then I just confirmed neural net just a more effective way to play it by having no learning with humans, pretty cool isnt?
+You can watch Abney racing the neural net here: 
+https://youtu.be/hPZJbxEbKfQ?t=63
+
+At Luigi Raceway Smart Kart time was 1'55"64, Abney did 1'53"60.
 
 
 
