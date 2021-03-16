@@ -37,7 +37,7 @@ I discovered through one neural net that you can use kind of a "cheat" to loss l
 
 "The key is straightening out though. You go slower when the kart is turned, so you want to do little adjustments and turn back the opposite direction to straighten out the kart as much as possible.".
 
-Then I just confirmed neural net just a more effective way to play it by having no learning with humans, pretty cool isnt?
+Then I just confirmed neural net just found a more effective way to play it by having no learning with humans, pretty cool isnt?
 You can watch Abney racing the neural net here: 
 https://youtu.be/hPZJbxEbKfQ?t=63
 
