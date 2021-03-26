@@ -14,7 +14,8 @@ https://www.youtube.com/watch?v=P1kLbxp8Mhk&list=PLkBF5AWJutYeHXpW44k4mvUM004CPX
 
 How it looks:
 
-![image](https://user-images.githubusercontent.com/56324869/71424612-ea29f680-2671-11ea-8173-9f5fcc724f1b.png)
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/56324869/112685762-cc8aa480-8e53-11eb-8b3f-61026f64fd6f.gif)
+
 
 As you'll see in the docs, there's some problems with the mapping system
 ![image](https://user-images.githubusercontent.com/56324869/71424771-35450900-2674-11ea-985d-02bbce4ffa3e.png)
